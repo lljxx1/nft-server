@@ -3,7 +3,7 @@ const axios = require('axios')
 const collections = require('./collections')
 
 //AWS.config.region = process.env.REGION
-const ddb = new AWS.DynamoDB();
+const ddb =  new AWS.DynamoDB.DocumentClient();
 const TableName = "prod-table";
 
 function sleep(seconds) {
