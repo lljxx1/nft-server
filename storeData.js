@@ -20,7 +20,7 @@ async function getNFTDataAndStore() {
             const url = `https://api.opensea.io/api/v1/asset/${collection.contract}/${collection.item}/`
             const data = await axios.get(url)
             const { one_day_volume, num_owners, floor_price, total_volume } = data.data.collection.stats
-            await ddb.putItem({
+            await ddb.put({
                 TableName,
                 'Item': {
                     PK: `nfts#${collection.id}`,
