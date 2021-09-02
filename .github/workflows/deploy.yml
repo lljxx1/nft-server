@@ -19,6 +19,6 @@ jobs:
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: nft-runner
         environment_name: Nftrunner-env
-        version_label: 2
+        version_label: ${{github.run_number}}
         region: eu-central-1
         deployment_package: deploy.zip
