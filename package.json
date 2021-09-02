@@ -1,8 +1,11 @@
 {
-  "name": "Elastic-Beanstalk-Sample-App",
+  "name": "nft-server",
   "version": "0.0.1",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "aws-sdk": "^2.981.0",
+    "axios": "^0.21.1"
+  },
   "scripts": {
     "start": "node app.js"
   }
