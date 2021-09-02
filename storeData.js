@@ -2,7 +2,7 @@ const AWS = require('aws-sdk');
 const axios = require('axios')
 const collections = require('./collections')
 
-//AWS.config.region = process.env.REGION
+AWS.config.region = "eu-central-1"
 const ddb =  new AWS.DynamoDB.DocumentClient();
 const TableName = "prod-table";
 
