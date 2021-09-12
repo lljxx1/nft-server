@@ -3,4 +3,5 @@ type TokenAggregate @entity {
   volume: BigInt!
   transactions: Int!
   owners: Bytes
+  assets: Bytes
 }
